@@ -1,16 +1,81 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>百度搜索</title>
+    <title>多搜索引擎搜索</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <style>
+        /* 简单的样式来区分不同的搜索引擎表单 */
+        form {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <form id="baiduSearchForm" action="https://www.baidu.com/s" method="get" target="_blank">
-        <input type="text" name="wd" id="searchQuery" placeholder="输入关键词搜索...">
+
+    <!-- 百度搜索 -->
+    <form action="https://www.baidu.com/s" method="get" target="_blank">
+        <h3>百度搜索</h3>
+        <input type="text" name="wd" placeholder="输入关键词搜索...">
         <button type="submit">搜索</button>
     </form>
-</body>
-</html>
+
+    <!-- 360搜索 -->
+    <form action="https://www.so.com/s" method="get" target="_blank">
+        <h3>360搜索</h3>
+        <input type="text" name="q" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+    <!-- 谷歌搜索 -->
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <h3>谷歌搜索</h3>
+        <input type="text" name="q" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+    <!-- 必应搜索 -->
+    <form action="https://www.bing.com/search" method="get" target="_blank">
+        <h3>必应搜索</h3>
+        <input type="text" name="q" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+    <!-- 搜狗搜索 -->
+    <form action="https://www.sogou.com/web" method="get" target="_blank">
+        <h3>搜狗搜索</h3>
+        <input type="text" name="query" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+    <!-- 知乎搜索 -->
+    <form action="https://www.zhihu.com/search" method="get" target="_blank">
+        <h3>知乎搜索</h3>
+        <input type="text" name="q" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+    <!-- GitHub搜索 -->
+    <form action="https://github.com/search" method="get" target="_blank">
+        <h3>GitHub搜索</h3>
+        <input type="text" name="q" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+    <!-- 头条搜索 -->
+    <form action="https://www.toutiao.com/search" method="get" target="_blank">
+        <h3>头条搜索</h3>
+        <input type="text" name="keyword" placeholder="输入关键词搜索...">
+        <button type="submit">搜索</button>
+    </form>
+
+     </form>
+    </body>
+ </html>
