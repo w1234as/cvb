@@ -1,0 +1,222 @@
+body {
+    background-color: #ebecf0;
+}
+
+.image {
+    width: 120px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 3;
+}
+
+.image img:nth-child(2) {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.box form {
+    text-align: center;
+    background-color: #ebecf0;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+    border-radius: 10px;
+}
+
+.shijian {
+    text-align: center;
+    line-height: 1;
+    color: #6c6c6c;
+    font-size: 16px;
+    margin-top: 20px;
+    transform: translateY(10px);
+}
+
+.shijian1 {
+    text-align: center;
+    line-height: 1;
+    color: #6c6c6c;
+    font-size: 30px;
+    margin-top: 20px;
+    transform: translateY(10px);
+}
+
+@font-face {
+    font-family: alimama;
+    src: url("../font/alimama.ttf");
+}
+
+.qx {
+    width: 100%;
+    height: 210px;
+    margin: auto;
+}
+
+.tu {
+    width: 95%;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.tu img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #12b7f5;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 93, 143, 1) 25%, transparent 25%, transparent 50%, rgba(255, 93, 143, 1) 50%, rgba(255, 93, 143, 1) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #f6f6f6;
+}
+
+.youqing {
+    height: 100px;
+    width: 100%;
+    font-family: alimama;
+}
+
+.jian {
+    height: 50px;
+    font-family: alimama;
+}
+
+.qq {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.qq1 {
+    width: 60px;
+    margin-top: 10px;
+}
+
+.mx {
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-top: -100px;
+}
+
+.site {
+    width: 40px;
+    margin-left: -280px;
+    margin-top: 12px;
+}
+
+.myyou {
+    margin-left: 0;
+    margin-top: -30px;
+    font-family: alimama;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "mjfont1";
+    src: url("../font/mjfont1.woff2");
+}
+
+.box2 form {
+    text-align: center;
+    background-color: #ebecf0;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+    border-radius: 10px, 60px;
+}
+
+.sdi {
+    margin-top: 60px;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.youqing {
+    font-size: 20px;
+}
+
+marquee {
+    height: 40px;
+    font-size: 20px;
+    line-height: 43px;
+}
+
+.lun {
+    font-family: mjfont1;
+}
+
+.anquan {
+    font-family: mjfont1;
+    text-align: center;
+}
+
+b {
+    font-size: 15px;
+}
+
+#momk {
+    animation: change 10s infinite;
+}
+
+@keyframes change {
+    0% {
+        color: #5cb85c;
+    }
+
+    25% {
+        color: #556bd8;
+    }
+
+    50% {
+        color: #e40707;
+    }
+
+    75% {
+        color: #66e616;
+    }
+
+    100% {
+        color: #67bd31;
+    }
+}
+
+@font-face {
+    font-family: "ziti";
+    src: url("../font/ziti123.ttf");
+}
+
+.yiyan {
+    font-family: ziti;
+}
+
+.bilibili {
+    height: 100px;
+    width: 100px;
+    margin-left: 120px;
+    margin-top: -99px;
+}
