@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: relative;
+    color: #000000;
+    padding: 0px;
+    background-image: url("bo.jpg");
+}
+
+.cc {
+    display: fixed;
+    margin-top: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    border-right: 1px solid #FFF3D1;
+    background-color: ed;
+    backdrop-filter: blur(18px);
+    transform: width .2s ease;
+}
+
+.cc:hover {
+    width: 100px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    white-space: nowrap;
+}
+
+ul li:hover {
+    transform: scale(1.2);
+    background-color: #F7DD86;
+}
+
+ul li span {
+    display: none;
+}
+
+.cc:hover ul li span {
+    display: block;
+}
+
+ul li img {
+    width: 20px;
+    height: 20px;
+}
