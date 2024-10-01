@@ -15,10 +15,10 @@
 </head>
 <body>
   <p id="p"></p>
-  <audio src="牵丝戏.mp3" type="audio/mpeg" autoplay></audio>
+  <audio id="myAudio" src="牵丝戏.mp3" type="audio/mpeg" autoplay loop></audio>
   <script>
     let str = "你的笑容是我见过最美的风景，你的声音是我听过最动听的旋律。每当我看到你，我的心就不由自主地跳动，我知道，那是因为我喜欢你，深深地喜欢你。我喜欢和你一起分享生活的点滴，无论是欢笑还是泪水，我都愿意与你共同承担。你的快乐我会加倍，你的痛苦我会减半。我愿意成为你的依靠，让你在任何时候都能感受到我的关爱和支持。我知道，爱情不是轻易说出口的，它需要勇气和责任。但我愿意为你勇敢，愿意承担起这份责任，因为我知道，你是我一直在寻找的那个人，那个值得我去珍惜和呵护的人。在未来的日子里，我希望我们能一起走过每一个春夏秋冬，一起经历生活的起起落落。我相信，只要我们手牵手，心连心，就没有什么困难是我们克服不了的。最后，我想对你说，我喜欢你，比任何人都要喜欢。希望你能接受我的这份心意，让我们一起走进彼此的世界，共同创造属于我们的美好未来。永远.喜欢你 2024,9,30";
-    let p = document.getElementById('p');
+    let p = document.getElementByIdp
     let i = 0;
     let timer = setInterval(() => {
       p.innerText += str[i];
@@ -27,6 +27,13 @@
         clearInterval(timer);
       }
     }, 200);
+
+    // 监听音频结束事件，并重新开始播放
+    let audio = document.getElementByIdmyAudio
+    audio.addEventListenerended () => {
+      audio.currentTime = 0; // 重置音频到开始位置
+      audio.play(); // 重新开始播放
+    });
   </script>
 </body>
 </html>
